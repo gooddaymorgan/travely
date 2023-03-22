@@ -1,13 +1,13 @@
 import React from 'react';
-import hero from '../assests/hero.jpg';
+// import hero from '../assests/hero.jpg';
 
 const Hero = (props) => (
-      <div>
-        <img src={hero} alt="#" width="100%" height="auto"/>
+      <div class="hero-image">
           <h1>
             Broaden Your
             Horizons
           </h1>
+          <button>Learn More</button>
       </div>
 
 );
