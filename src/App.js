@@ -4,9 +4,10 @@ import Header from './components/Header'
 
 function App() {
   return (
-    <body>
+    <div>
       <Header />
-    </body>
+      <Hero />
+    </div>
   );
 }
 
