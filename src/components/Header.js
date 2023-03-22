@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => (
     <header>
-        <a href="#">Logo</a>
+        <a href="#">Travely</a>
 
         <div>
             <a href="#">About</a>
@@ -12,5 +12,6 @@ const Header = (props) => (
         </div>
     </header>
 );
+
 
 export default Header;
