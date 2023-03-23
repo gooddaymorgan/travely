@@ -35,6 +35,39 @@ header a:last-child {
     box-shadow: inset 0px 0px 50px 40px #000000;
 }
 
-h1 {
-  margin: 0;
+.hero-inner h1 {
+  font-size:5rem;
+  text-shadow: 2px 3px #000000;
+}
+
+.hero-text-secondary {
+  font-size: 6rem;
+}
+
+.hero-inner {
+  color: white; 
+  margin: 10% 0 0 10%;
+}
+
+.hero-inner button {
+  padding: 20px;
+  border: 3px solid #ffffff;
+  background-color: #0000003b;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* .places-section {
+  color: white;
+  text-align: center;
+  margin: 200px;
+} */
+
+/* .places-images-section {
+    background-color: #ffffff;
+} */
+
+.image-one {
+  background-color: #ffffff;
 }

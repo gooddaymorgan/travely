@@ -9,6 +9,7 @@ const Header = (props) => (
             <a href="#">Places</a>
             <a href="#">Booking</a>
             <a href="#">Profile</a>
+            <button>Interact</button>
         </div>
     </header>
 );
