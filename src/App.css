@@ -58,16 +58,50 @@ header a:last-child {
   font-weight: 500;
 }
 
-/* .places-section {
+.places-section {
   color: white;
   text-align: center;
   margin: 200px;
-} */
+} 
 
-/* .places-images-section {
+.places-images-section {
     background-color: #ffffff;
-} */
+    justify-content: space-around;
+    margin: 20px;
+}
 
 .image-one {
   background-color: #ffffff;
+}
+
+.about-image {
+  margin: 0;
+  background: url('./assests/hero.jpg');
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px 0px 50px 40px #000000;
+}
+
+.about-inner {
+  color: white; 
+  margin: 10% 0 0 10%;
+  max-width: 400px;
+}
+
+.about-inner h1 {
+  font-size:4rem;
+  text-shadow: 2px 3px #000000;
+}
+.about-inner h2 {
+  font-size:5rem;
+  text-shadow: 2px 3px #000000;
+}
+
+.about-inner p {
+  text-align: left;
 }
