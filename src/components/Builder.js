@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Location from './Location';
 import Africa from './citylist/Africa';
 import Asia from './citylist/Asia';
 // import CityList from './CityList';
@@ -109,8 +110,8 @@ return (
 
             <h2>Choose Your Cities</h2>
             <p>{value}</p>
-            { africanCity ? <Africa /> : null} 
-            { asianCity ? <Asia /> : null} 
+            { africanCity ? <Location name="Africa" /> : null} 
+            { asianCity ? <Location name="Asia"/> : null} 
             { aussieCity ? <Asia /> : null} 
             { europeCity ? <Asia /> : null} 
             { naCity ? <Asia /> : null} 
