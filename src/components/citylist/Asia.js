@@ -1,10 +1,10 @@
 import React from 'react';
 // import hero from '../assests/hero.jpg';
 
-const CityList = (props) => (
+const Asia = (props) => (
       <div>
-            <h1>Hello!</h1>
+        <h1>Asia</h1>
       </div>
 );
 
-export default CityList;
+export default Asia;
