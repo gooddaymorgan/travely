@@ -35,11 +35,11 @@ const Builder = () => {
       }
       if (elem.value === "Africa"){
         showAfricanCities(true);
-        showAsianCities(null);
-        showAussieCities(null);
-        showEuropeCities(null);
-        showNACities(null);
-        showSACities(null);
+        showAsianCities(false);
+        showAussieCities(false);
+        showEuropeCities(false);
+        showNACities(false);
+        showSACities(false);
 
       }
       if (elem.value === "Asia"){
