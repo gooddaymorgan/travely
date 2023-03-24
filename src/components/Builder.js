@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Africa from './Africa';
+import Africa from './citylist/Africa';
 // import CityList from './CityList';
 
 
 const Builder = () => {
 
     const [value, setValue] = React.useState('Choose A Contient');
-    const [showResults, setShowResults] = useState(false);
+    const [africanCity, showAfricanCities] = useState(false);
 
    
     const handleChange = (event) => {
@@ -15,8 +15,15 @@ const Builder = () => {
 
       //This is how I'm doing it we ANIT GOT TIME
       let elem = document.getElementById("cityList");
+
+      if (elem.value === "None"){
+        showAfricanCities(null);
+      }
       if (elem.value === "Africa"){
-        setShowResults(true);
+        showAfricanCities(true);
+      }
+      if (elem.value === "Asia"){
+        // setShowResults(true);
       }
    
     };
@@ -30,6 +37,7 @@ return (
             <h2>Choose Your Contient</h2>
 
             <select name="cars" id="cityList" value={value} onChange={handleChange}>
+                <option value= "None">No Contient Selected</option>
                 <option value="Africa">Africa</option>
                 <option value="Asia">Asia</option>
                 <option value="Austrailia">Austrailia</option>
@@ -40,7 +48,7 @@ return (
 
             <h2>Choose Your Cities</h2>
             <p>{value}</p>
-            {showResults ? <Africa /> : null} 
+            { africanCity ? <Africa /> : null} 
         </div>
     </form>                             
     </div>
