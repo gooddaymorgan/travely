@@ -1,28 +1,43 @@
-import React from 'react';
-import Dropdown from './Dropdown'
+import React, { useState } from 'react';
 
 
-const [task, setTask] = useState(null);
-const [allTasks, setAllTasks] = useState([]);
+const Builder = () => {
 
-const Builder = (props) => (
+    const [value, setValue] = React.useState('Choose A Contient');
+   
+    const handleChange = (event) => {
+   
+      setValue(event.target.value);
+   
+    };
 
+
+return (
     <div>
-        <h1>Build Your Itineary</h1>
-        <Dropdown />
-        <div>
-            <div>
-                <h2>Cities In Your Area</h2>
-                <div id="cities"></div>
-            </div>
+    <form className="form-container">
+    <h1>Build Your Itinerary</h1>
+        <div className="builder">
+            <h2>Choose Your Contient</h2>
 
-            <div>
-                <h2>Itineary</h2>
-                <div id="cities_itenary"></div>
-            </div>
+            <select name="cars" id="cars" value={value} onChange={handleChange}>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Austrailia">Austrailia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+            </select>
+
+            
+            {/* {showResults ? <p class="errorMessage">You can not enter a blank task!</p> : null} */}
+
+            <h2>Choose Your Cities</h2>
+            <p>{value}</p>
         </div>
+    </form>                             
     </div>
 );
+}
 
 
 export default Builder;
