@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import CityList from './CityList';
-
+// import CityList from './CityList';
 
 const Builder = () => {
 
     const [value, setValue] = React.useState('Choose A Contient');
-    const [showResults, setShowResults] = useState(false);
+    const [showResults, setShowResults] = React.useState(false);
+    const [africaValue, setAfricaValue] = React.useState(['Cape Town, South Africa', 'Marrakesh, Morocco', 'Johannesburg, South Africa' , 'Cairo, Egypt', 'Stone Town, Zanzibar']);
 
-   
     const handleChange = (event) => {
    
-      setValue(event.target.value);
-      setShowResults(true);
-   
-    };
+        setValue(event.target.value);
+        setShowResults(true);
+        setAfricaValue(event.target.value);
+    
+
 
 
 return (
@@ -34,12 +34,16 @@ return (
 
             <h2>Choose Your Cities</h2>
             <p>{value}</p>
-            {showResults ? <CityList /> : null} 
+            {showResults ? <p>{africaValue}</p> : null} 
+
+            <div>
+            <p>{africaValue}</p>
+            </div>
         </div>
     </form>                             
     </div>
 );
 }
-
+}
 
 export default Builder;
