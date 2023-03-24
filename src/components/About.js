@@ -19,7 +19,6 @@ const About = (props) => (
                 Maecenas eu dui non leo faucibus volutpat. Morbi sit amet scelerisque erat. 
                 Cras dignissim consectetur odio eget blandit.
 
-                <button>Hi</button>
             </p>
         </div>
     </div>

@@ -5,11 +5,9 @@ const Header = (props) => (
         <a href="#">Travely</a>
 
         <div>
-            <a href="#">About</a>
             <a href="#">Places</a>
-            <a href="#">Booking</a>
-            <a href="#">Profile</a>
-            <button>Interact</button>
+            <a href="#">About</a>
+            <a href="#">Itineary Builder</a>
         </div>
     </header>
 );
