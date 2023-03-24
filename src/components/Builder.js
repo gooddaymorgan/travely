@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CityList from './CityList';
+import Africa from './Africa';
+// import CityList from './CityList';
 
 
 const Builder = () => {
@@ -11,7 +12,12 @@ const Builder = () => {
     const handleChange = (event) => {
    
       setValue(event.target.value);
-      setShowResults(true);
+
+      //This is how I'm doing it we ANIT GOT TIME
+      let elem = document.getElementById("cityList");
+      if (elem.value === "Africa"){
+        setShowResults(true);
+      }
    
     };
 
@@ -23,7 +29,7 @@ return (
         <div className="builder">
             <h2>Choose Your Contient</h2>
 
-            <select name="cars" id="cars" value={value} onChange={handleChange}>
+            <select name="cars" id="cityList" value={value} onChange={handleChange}>
                 <option value="Africa">Africa</option>
                 <option value="Asia">Asia</option>
                 <option value="Austrailia">Austrailia</option>
@@ -34,7 +40,7 @@ return (
 
             <h2>Choose Your Cities</h2>
             <p>{value}</p>
-            {showResults ? <CityList /> : null} 
+            {showResults ? <Africa /> : null} 
         </div>
     </form>                             
     </div>
