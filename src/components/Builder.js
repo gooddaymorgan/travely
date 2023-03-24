@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import CityList from './CityList';
 
 
 const Builder = () => {
 
     const [value, setValue] = React.useState('Choose A Contient');
+    const [showResults, setShowResults] = useState(false);
+
    
     const handleChange = (event) => {
    
       setValue(event.target.value);
+      setShowResults(true);
    
     };
 
@@ -28,11 +32,9 @@ return (
                 <option value="South America">South America</option>
             </select>
 
-            
-            {/* {showResults ? <p class="errorMessage">You can not enter a blank task!</p> : null} */}
-
             <h2>Choose Your Cities</h2>
             <p>{value}</p>
+            {showResults ? <CityList /> : null} 
         </div>
     </form>                             
     </div>
